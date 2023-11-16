@@ -3,6 +3,7 @@ import githubImage from "../../../public/github.png";
 import instagramImage from "../../../public/instagram.png";
 import linkedinImage from "../../../public/linkedin.webp";
 import stackoverflowImage from "../../../public/stackoverflow.png";
+import Sidebar from "../siderbar/Sidebar";
 
 import "./navbar.scss";
 
@@ -46,12 +47,13 @@ export default function Navbar() {
     <>
       <div className="navbar">
         {/* slidebar */}
+        <Sidebar />
         <div className="wrapper">
           <motion.span
             initial={{ opacity: 0, x: 100, scale: 0 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
           >
-            filan
+             moein parvizi
           </motion.span>
           <motion.div variants={variants} initial='hidden' animate='visible' className="social">
             {socials.map((item, i) => {

@@ -1,4 +1,4 @@
-@import url('../../assets/styles/globals.scss');
+// @import url('../../assets/styles/globals.scss');
 
 .navbar{
   height: 100px;
@@ -22,6 +22,7 @@
       gap: 20px;
 
       img{
+        border-radius: 3px;
         width: 18px;
         height: 18px;
       }
