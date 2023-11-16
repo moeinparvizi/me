@@ -1,10 +1,16 @@
 // import styles
-import "./assets/styles/app.scss";
+import "./assets/styles/globals.scss"
+import "./app.scss";
+
+// import components
+import Navbar from "./Components/navbar/Navbar";
 
 function App() {
   return (
     <div>
-      <section>Hero</section>
+      <section>
+        <Navbar />
+      </section>
       <section>Parallax</section>
       <section>Services</section>
       <section>Parallax</section>

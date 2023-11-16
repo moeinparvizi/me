@@ -36,6 +36,7 @@ $lightgray : #d3d3d3;
 body {
   background-color: $bg;
   color: $lightgray;
+  font-family: "dm-sans";
   // remove default a tag styles
   a {
     text-decoration: none;
