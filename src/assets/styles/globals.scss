@@ -1,0 +1,44 @@
+// import fonts
+@font-face {
+  font-family: "dm-sans";
+  src: url("../fonts/DM_Sans/static/DMSans-Medium.ttf");
+}
+@font-face {
+  font-family: "dm-sans-italic";
+  src: url("../fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+  font-family: "dm-sans-bold";
+  src: url("../fonts/DM_Sans/static/DMSans_24pt-Bold.ttf");
+}
+@font-face {
+  font-family: "dm-sans-black";
+  src: url("../fonts/DM_Sans/static/DMSans_36pt-Black.ttf");
+}
+@font-face {
+  font-family: "dm-sans-thin";
+  src: url("../fonts/DM_Sans/static/DMSans-Thin.ttf");
+}
+
+// repeating styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "dm-sans";
+}
+
+// color variables
+$bg: #0c0c1d;
+$lightgray : #d3d3d3;
+
+// body styles
+body {
+  background-color: $bg;
+  color: $lightgray;
+  // remove default a tag styles
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
