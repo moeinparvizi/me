@@ -32,7 +32,7 @@ export default function Links() {
     <motion.div className="links" variants={variants}>
       {menu.map((item, i) => {
         return (
-          <motion.a href={"#" + item} key={item + i} variants={itemVariants} whileHover={{scale:1.2,color:'black'}}>
+          <motion.a href={"#" + item} key={item + i} variants={itemVariants} whileHover={{scale:1.2,color:'black'}} whileTap={{scale:0.8}}>
             {item}
           </motion.a>
         );
