@@ -33,6 +33,7 @@ const socials = [
     url: "https://linkedin.com/in/moeinparvizi2002",
   },
 ];
+
 export default function Navbar() {
   const variants = {
     visible: (i) => ({
@@ -48,6 +49,8 @@ export default function Navbar() {
       <div className="navbar">
         {/* slidebar */}
         <Sidebar />
+
+        {/* navigation bar */}
         <div className="wrapper">
           <motion.span
             initial={{ opacity: 0, x: 100, scale: 0 }}
@@ -59,7 +62,7 @@ export default function Navbar() {
             {socials.map((item, i) => {
               return(
                 <motion.a key={item.name} href={item.url} variants={variants} custom={i}>
-                  <img src={item.img} alt="logo" />
+                  <img src={item.img} alt={item.name+' '+'logo'} />
                 </motion.a>
               )
             })}
