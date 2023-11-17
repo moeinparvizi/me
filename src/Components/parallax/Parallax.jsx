@@ -39,13 +39,13 @@ export const Parallax = ({ type }) => { const parallax = useRef();
       ref={parallax}
       style={{
         background:
-          type == "services"
+          type == "skills"
             ? "linear-gradient(180deg, #111132, #0c0c1c )"
             : "linear-gradient(180deg, #111132, #505064 )",
       }}
     >
       <motion.h1 style={{ y: text }}>
-        {type == "services" ? "what we do?" : "what we did?"}
+        {type == "skills" ? "see my skills!" : "see my projects!"}
       </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
@@ -54,7 +54,7 @@ export const Parallax = ({ type }) => { const parallax = useRef();
         // animate="animate"
         style={{
           y: planets,
-          backgroundImage: `url(${type == "services" ? "/public/planets.png" : "/public/sun.png"})`,
+          backgroundImage: `url(${type == "skills" ? "/public/planets.png" : "/public/sun.png"})`,
         }}
         className="planets"
       ></motion.div>

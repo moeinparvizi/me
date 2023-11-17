@@ -10,12 +10,12 @@ import { Parallax } from "./Components/parallax/Parallax";
 function App() {
   return (
     <div>
-      <section>
+      <section id="homepage">
         <Navbar />
         <Hero />
       </section>
-      <section id="homepage"><Parallax type="services" /></section>
-      <section id="services">Services</section>
+      <section id="skills"><Parallax type="skills" /></section>
+      <section>skills</section>
       <section id="portfolio"><Parallax type="portfolio" /></section>
       <section>Portfolio1</section>
       <section>Portfolio2</section>

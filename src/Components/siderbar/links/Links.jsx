@@ -26,13 +26,13 @@ const itemVariants = {
 };
 
 export default function Links() {
-  const menu = ["homepage", "services", "portfolio", "contact", "about"];
+  const menu = ["homepage", "skills", "portfolio", "contact", "about"];
 
   return (
     <motion.div className="links" variants={variants}>
       {menu.map((item, i) => {
         return (
-          <motion.a href={"#" + item} key={item + i} variants={itemVariants} whileHover={{scale:1.2,color:'black'}} whileTap={{scale:0.8}}>
+          <motion.a href={"#" + item} key={item + i} variants={itemVariants} whileHover={{scale:1.2,color:'white'}} whileTap={{scale:0.8}}>
             {item}
           </motion.a>
         );

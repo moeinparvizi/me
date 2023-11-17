@@ -43,6 +43,11 @@
           border-radius: 10px;
           color: white;
           font-weight: 300;
+
+          &:nth-child(2){
+            background-color: white;
+            color: black;
+          }
         }
       }
     }
