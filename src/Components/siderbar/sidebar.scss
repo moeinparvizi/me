@@ -8,6 +8,7 @@
 
   .bg {
     position: fixed;
+    z-index: 99;
     bottom: 0;
     top: 0;
     left: 0;
@@ -16,6 +17,7 @@
 
     .links {
       position: absolute;
+      z-index: 100;
       width: 100%;
       height: 100%;
       display: flex;
@@ -37,6 +39,7 @@
     height: 50px;
     border-radius: 50%;
     position: fixed;
+    z-index: 100;
     top: 25px;
     left: 25px;
     background-color: transparent;
