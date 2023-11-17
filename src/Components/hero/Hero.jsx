@@ -55,10 +55,10 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>moein parvizi</motion.h1>
           <motion.h2 variants={textVariants}>i&apos;m web developer</motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} whileHover={{scale:1.2}} whileTap={{scale:0.8}}>
               see the latest works
             </motion.button>
-            <motion.button variants={textVariants}>contact me</motion.button>
+            <motion.button variants={textVariants} whileHover={{scale:1.2}} whileTap={{scale:0.8}}>contact me</motion.button>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src={scrollImage} alt="" />
         </motion.div>

@@ -34,6 +34,8 @@
         display: flex;
         gap: 20px;
         button{
+          position: relative;
+          z-index: 99;
           cursor: pointer;
           border: 1px solid white;
           padding: 20px;
