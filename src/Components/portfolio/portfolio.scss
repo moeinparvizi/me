@@ -7,12 +7,12 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color: #6930C3;
     font-size: 36px;
 
     > .progress-bar {
       height: 10px;
-      background-color: #fff;
+      background-color: #7400B8;
     }
   }
 
@@ -61,7 +61,8 @@
 
         >button{
           border: none;
-          background-color: orange;
+          background-color: #5390D9;
+          color: white;
           width: 200px;
           border-radius: 10px;
           padding: 10px;

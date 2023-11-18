@@ -11,6 +11,7 @@ const posts = [
     image:
       "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
+    url:''
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const posts = [
     image:
       "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
+    url:''
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const posts = [
     image:
       "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
+    url:''
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ const posts = [
     image:
       "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
+    url:''
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ const posts = [
     image:
       "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
+    url:''
   },
 ];
 
@@ -61,7 +66,9 @@ const Single = ({ post }) => {
           <motion.div className="text-container" style={{ y }}>
             <h4>{post.title}</h4>
             <p>{post.desc}</p>
-            <button>see demo</button>
+            <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}}>
+              <a href={post.url}>see demo</a>
+            </motion.button>
           </motion.div>
         </div>
       </div>
