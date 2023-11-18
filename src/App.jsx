@@ -8,6 +8,7 @@ import Hero from "./Components/hero/Hero";
 import { Parallax } from "./Components/parallax/Parallax";
 import { Skills } from "./Components/skills/Skills";
 import { Portfolio } from "./Components/portfolio/Portfolio";
+import About from "./Components/about/About";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <section><Skills /></section>
       <section id="portfolio"><Parallax type="portfolio" /></section>
       <Portfolio />
-      <section id="contact">Contact</section>
+      <section id="contact"><About /></section>
     </div>
   );
 }
