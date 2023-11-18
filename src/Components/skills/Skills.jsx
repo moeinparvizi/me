@@ -6,10 +6,8 @@ import { Circle } from "rc-progress";
 import "./skills.scss";
 import { useEffect, useRef, useState } from "react";
 
-
-
 export const Skills = () => {
-  const menuFix = useRef()
+  const menuFix = useRef();
 
   const [view, setView] = useState("");
 
@@ -161,7 +159,7 @@ export const Skills = () => {
     {
       id: "motion",
       name: "framer motion",
-      percent: 90,
+      percent: 70,
       url: "https://www.framer.com/motion/",
     },
     {
@@ -237,24 +235,31 @@ export const Skills = () => {
     hidden: { opacity: 0, x: -100 },
   };
 
-  useEffect(()=>{
-    window.addEventListener('scroll',()=>{
-      if(window.scrollY > 1000){
-        menuFix.current.style.display = 'flex'
-        menuFix.current.style.visibility = 'visible'
-      } if (window.scrollY < 1000) {
-        menuFix.current.style.visibility = 'hidden'
-        menuFix.current.style.display = 'none'
-      } if (window.scrollY > 2000) {
-        menuFix.current.style.visibility = 'hidden'
-        menuFix.current.style.display = 'none'
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 1000) {
+        menuFix.current.style.display = "flex";
+        menuFix.current.style.visibility = "visible";
       }
-    })
-  })
+      if (window.scrollY < 1000) {
+        menuFix.current.style.visibility = "hidden";
+        menuFix.current.style.display = "none";
+      }
+      if (window.scrollY > 2000) {
+        menuFix.current.style.visibility = "hidden";
+        menuFix.current.style.display = "none";
+      }
+    });
+  });
 
   return (
     <div className="container">
-      <motion.span variants={variants} className="skills-menu" data-status='on' ref={menuFix}>
+      <motion.span
+        variants={variants}
+        className="skills-menu"
+        data-status="on"
+        ref={menuFix}
+      >
         {menu.map((i, v) => {
           return (
             <motion.a
@@ -283,20 +288,32 @@ export const Skills = () => {
                 percent={view}
                 strokeWidth={4}
                 strokeColor={{
-                  "0%": "#000",
-                  "100%": "#fff",
+                  "5%": "#5E60CE",
+                  "40%": "#6930C3",
+                  "100%": "#7400B8",
                 }}
-                strokeLinecap="round"
                 className="circle"
+                trailWidth={1}
+                trailColor="#3f3f3f"
+                gapDegree={70}
+                gapPosition="bottom"
+                strokeLinecap="round"
               />
-              <a href={item.url}>
+              <motion.a href={item.url}>
                 <motion.h5
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   initial={{ opacity: 0, y: -200 }}
-                  whileInView={{ opacity: 1, y: "-50%", x: "-50%" }}
+                  whileInView={{
+                    opacity: 1,
+                    y: "-50%",
+                    x: "-50%",
+                    rotate: 360,
+                  }}
                 >
                   {item.name}
                 </motion.h5>
-              </a>
+              </motion.a>
             </motion.div>
           );
         })}
