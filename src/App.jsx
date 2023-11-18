@@ -7,6 +7,7 @@ import Navbar from "./Components/navbar/Navbar";
 import Hero from "./Components/hero/Hero";
 import { Parallax } from "./Components/parallax/Parallax";
 import { Skills } from "./Components/skills/Skills";
+import { Portfolio } from "./Components/portfolio/Portfolio";
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
       <section id="skills"><Parallax type="skills" /></section>
       <section><Skills /></section>
       <section id="portfolio"><Parallax type="portfolio" /></section>
-      <section>Portfolio2</section>
-      <section>Portfolio2</section>
-      <section>Portfolio3</section>
+      <Portfolio />
       <section id="contact">Contact</section>
     </div>
   );
