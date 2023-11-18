@@ -61,7 +61,7 @@ export default function Navbar() {
           <motion.div variants={variants} initial='hidden' animate='visible' className="social">
             {socials.map((item, i) => {
               return(
-                <motion.a key={item.name} href={item.url} variants={variants} custom={i}>
+                <motion.a key={item.name} href={item.url} variants={variants} custom={i} whileHover={{scale:1.2}}>
                   <img src={item.img} alt={item.name+' '+'logo'} />
                 </motion.a>
               )

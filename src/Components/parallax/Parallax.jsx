@@ -22,7 +22,8 @@ import "./parallax.scss";
 //   },
 // };
 
-export const Parallax = ({ type }) => { const parallax = useRef();
+export const Parallax = ({ type }) => { 
+  const parallax = useRef();
 
   const { scrollYProgress } = useScroll({
     target: parallax,
