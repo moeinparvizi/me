@@ -26,5 +26,5 @@ export const Cursor = () => {
     }
   },[])
 
-  return <motion.div style={styles} animate={{x:pos.x, y:pos.y}} className="cursor"></motion.div>;
+  return <motion.div style={styles} animate={{x:pos.x+10, y:pos.y+10}} className="cursor"></motion.div>;
 };
