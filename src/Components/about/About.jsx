@@ -61,15 +61,15 @@ const About = () => {
           <div className="contact-me">
             <div className="mail">
               <span>mail</span>
-              <a href="mail:giventulip@gmail.com">
+              <a href="mailto:giventulip@gmail.com">
                 giventulip<span>@gmail.com</span>
               </a>
             </div>
             <div className="phone">
               <span>phone</span>
-              <div>
+              <a href="tel:+989226756339">
                 <span>+98</span>9226756339
-              </div>
+              </a>
             </div>
           </div>
           <motion.div

@@ -9,10 +9,12 @@ import { Parallax } from "./Components/parallax/Parallax";
 import { Skills } from "./Components/skills/Skills";
 import { Portfolio } from "./Components/portfolio/Portfolio";
 import About from "./Components/about/About";
+import { Cursor } from "./Components/cursor/Cursor";
 
 function App() {
   return (
     <div>
+      <Cursor />
       <section id="homepage">
         <Navbar />
         <Hero />
