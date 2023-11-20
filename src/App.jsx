@@ -19,11 +19,11 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      {/* <section id="skills"><Parallax type="skills" /></section>
-      <section><Skills /></section>
+      <section id="skills"><Parallax type="skills" /></section>
+      {/* <section><Skills /></section> */}
       <section id="portfolio"><Parallax type="portfolio" /></section>
-      <Portfolio />
-      <section id="about"><About /></section> */}
+      {/* <Portfolio /> */}
+      {/* <section id="about"><About /></section> */}
     </div>
   );
 }
