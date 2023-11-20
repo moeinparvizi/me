@@ -17,7 +17,7 @@ function App() {
       {/* <Cursor /> */}
       <section id="homepage">
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
       </section>
       {/* <section id="skills"><Parallax type="skills" /></section>
       <section><Skills /></section>

@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .sidebar {
   display: flex;
   justify-content: center;
@@ -25,6 +27,14 @@
     -webkit-backdrop-filter: blur(5.9px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 
+    @include mobile {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      mix-blend-mode: normal;
+      background: rgba(255, 255, 255, 0.43);
+    }
+
     .links {
       position: absolute;
       z-index: 1000;
@@ -36,10 +46,17 @@
       flex-direction: column;
       gap: 20px;
 
+      @include mobile {
+        gap: 30px;
+      }
+
       a {
         color: #666666;
         font-size: 40px;
         text-transform: capitalize;
+        @include mobile {
+          color: rgb(63, 63, 63);
+        }
       }
     }
   }
