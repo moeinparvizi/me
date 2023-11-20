@@ -30,6 +30,9 @@
         color: purple;
         margin-bottom: 50px;
 
+        @include tablet {
+          font-size: 60px;
+        }
         @include mobile {
           font-size: 50px;
           margin-bottom: 30px;
