@@ -23,7 +23,7 @@ function App() {
       {/* <section><Skills /></section> */}
       <section id="portfolio"><Parallax type="portfolio" /></section>
       <Portfolio />
-      <section id="about"><About /></section>
+      {/* <section id="about"><About /></section> */}
     </div>
   );
 }
