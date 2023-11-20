@@ -4,25 +4,11 @@ import { useRef } from "react";
 // import styles
 import "./parallax.scss";
 
+// images
+import planets from '../../../public/planets.png'
+import sun from '../../../public/sun.png'
 
-// const plan = {
-//   initial: {
-//     y: 0,
-//   },
-//   animate: {
-//     y: 10,
-//     transition: {
-//       repeat: Infinity,
-//       duration: 20,
-//       repeatType: "mirror",
-//       stiffness: 220,
-//       damping: 300,
-//       type: "spring"
-//     },
-//   },
-// };
-
-export const Parallax = ({ type }) => { 
+export const Parallax = ({ type }) => {
   const parallax = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -55,7 +41,7 @@ export const Parallax = ({ type }) => {
         // animate="animate"
         style={{
           y: planets,
-          backgroundImage: `url(${type == "skills" ? "/public/planets.png" : "/public/sun.png"})`,
+          backgroundImage: `url(${type == "skills" ? planets : sun})`,
         }}
         className="planets"
       ></motion.div>

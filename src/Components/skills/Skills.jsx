@@ -193,10 +193,10 @@ export const Skills = () => {
       url: "https://python.org/",
     },
     {
-      id: "django",
-      name: "Django",
-      percent: 40,
-      url: "https://www.djangoproject.com/",
+      id: "git",
+      name: "git",
+      percent: 90,
+      url: "https://github.com/moeinparvizi",
     },
     {
       id: "linux",
@@ -222,7 +222,7 @@ export const Skills = () => {
     "wow",
     "swiper",
     "python",
-    "django",
+    "git",
     "linux",
   ];
   const variants = {
