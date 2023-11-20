@@ -13,12 +13,12 @@
     font-size: 100px;
     text-transform: capitalize;
 
-    @include mobile {
-      font-size: 70px;
-      text-align: center;
-    }
     @include tablet {
       font-size: 80px;
+      text-align: center;
+    }
+    @include mobile {
+      font-size: 50px;
       text-align: center;
     }
   }
@@ -32,11 +32,11 @@
     position: absolute;
     z-index: 3;
 
-    @include mobile {
+    @include tablet {
       background-size: contain;
       background-repeat: no-repeat;
     }
-    @include tablet {
+    @include mobile {
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -50,11 +50,11 @@
     position: absolute;
     z-index: 2;
 
-    @include mobile {
+    @include tablet {
       background-size: contain;
       background-repeat: no-repeat;
     }
-    @include tablet {
+    @include mobile {
       background-size: contain;
       background-repeat: no-repeat;
     }

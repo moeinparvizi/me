@@ -13,13 +13,13 @@
     // styles
     height: 100%;
 
-      @include mobile {
-        justify-content: flex-end;
-        padding: 20px;
-      }
       @include tablet {
         gap: 50px;
         justify-content: center;
+        padding: 20px;
+      }
+      @include mobile {
+        justify-content: flex-end;
         padding: 20px;
       }
 
