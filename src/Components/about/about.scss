@@ -1,5 +1,91 @@
-.about{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about {
+  width: 100%;
+  height: 100%;
+  color: white;
+
+  > .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 100%;
+
+    > .text-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      > h2 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 70px;
+        color: purple;
+        margin-bottom: 50px;
+
+        > div {
+          padding: 5px 20px 5px 20px;
+          display: grid;
+          place-content: center;
+          border-radius: 20px;
+          color: white;
+        }
+      }
+      > .contact-me {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        > div {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            color: purple;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+
+          div,
+          a {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            > span {
+              color: #5e60ce;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      > .social-me {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+        }
+      }
+    }
+    > .about-me-container {
+      width: 40%;
+      padding: 20px;
+
+      >p{
+        line-height: 30px;
+        word-spacing: 5px;
+        letter-spacing: 0.2px;
+        font-size: 20px;
+      }
+    }
+  }
 }
