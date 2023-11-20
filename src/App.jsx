@@ -22,7 +22,7 @@ function App() {
       <section id="skills"><Parallax type="skills" /></section>
       <section><Skills /></section>
       <section id="portfolio"><Parallax type="portfolio" /></section>
-      {/* <Portfolio /> */}
+      <Portfolio />
       {/* <section id="about"><About /></section> */}
     </div>
   );
