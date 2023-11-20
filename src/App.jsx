@@ -14,16 +14,16 @@ import { Cursor } from "./Components/cursor/Cursor";
 function App() {
   return (
     <div>
-      <Cursor />
+      {/* <Cursor /> */}
       <section id="homepage">
         <Navbar />
-        <Hero />
+        {/* <Hero /> */}
       </section>
-      <section id="skills"><Parallax type="skills" /></section>
+      {/* <section id="skills"><Parallax type="skills" /></section>
       <section><Skills /></section>
       <section id="portfolio"><Parallax type="portfolio" /></section>
       <Portfolio />
-      <section id="about"><About /></section>
+      <section id="about"><About /></section> */}
     </div>
   );
 }

@@ -2,14 +2,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const styles = {
-  border: '1px solid white',
-  width: '50px',
-  height: '50px',
-  borderRadius: '50%',
-  position: 'fixed',
-  zIndex: 99999,
-}
 
 export const Cursor = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -26,5 +18,5 @@ export const Cursor = () => {
     }
   },[])
 
-  return <motion.div style={styles} animate={{x:pos.x+10, y:pos.y+10}} className="cursor"></motion.div>;
+  return <motion.div animate={{x:pos.x+10, y:pos.y+10}} className="cursor"></motion.div>;
 };

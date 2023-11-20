@@ -1,4 +1,4 @@
-// @import url('../../assets/styles/globals.scss');
+@import '../../app.scss';
 
 .navbar{
   height: 100px;
@@ -13,8 +13,17 @@
     // styles
     height: 100%;
 
+      @include mobile {
+        justify-content: flex-end;
+        padding: 20px;
+      }
+
     >span{
       font-weight: bold;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     >.social{
