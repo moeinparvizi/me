@@ -17,6 +17,11 @@
         justify-content: flex-end;
         padding: 20px;
       }
+      @include tablet {
+        gap: 50px;
+        justify-content: center;
+        padding: 20px;
+      }
 
     >span{
       font-weight: bold;

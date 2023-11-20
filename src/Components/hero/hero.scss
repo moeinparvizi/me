@@ -25,6 +25,12 @@
         gap: 20px;
         align-items: center;
       }
+      @include tablet {
+        width: 100%;
+        height: 50%;
+        gap: 20px;
+        align-items: center;
+      }
 
       h1{
         font-size: 40px;
@@ -36,6 +42,10 @@
           font-size: 20px;
           text-align: center;
         }
+        @include tablet {
+          font-size: 30px;
+          position: relative;
+        }
       }
       h2{
         font-size: 88px;
@@ -45,13 +55,29 @@
           font-size: 40px;
           text-align: center;
         }
+        @include tablet {
+          font-size: 60px;
+        }
+
       }
       img{
         width: 50px;
+
+        @include tablet {
+          position: absolute;
+          left: 50px;
+          top: 600px;
+        }
       }
       .buttons{
         display: flex;
         gap: 20px;
+
+        @include tablet {
+          width: 100%;
+          justify-content: space-around;
+        }
+
         button{
           position: relative;
           z-index: 99;
@@ -90,6 +116,12 @@
 
     @include mobile {
       height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+    @include tablet {
+      height: 70%;
       width: 100%;
       top: unset;
       bottom: 0;
