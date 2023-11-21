@@ -15,12 +15,7 @@
     top: 0;
     left: 0;
     width: 400px;
-    background: white;
-
-    // ! maby
-    mix-blend-mode: difference;
-
-    background: rgba(255, 255, 255, 0.73);
+    background: rgba(255, 255, 255, 0.43);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.9px);
@@ -28,7 +23,6 @@
 
     @include tablet {
       background: rgba(255, 255, 255, 0.43);
-      mix-blend-mode: normal;
     }
 
     @include mobile {
@@ -53,12 +47,9 @@
       }
 
       a {
-        color: #666666;
         font-size: 40px;
         text-transform: capitalize;
-        @include tablet {
-          color: rgb(63, 63, 63);
-        }
+        color: rgb(63, 63, 63);
       }
     }
   }

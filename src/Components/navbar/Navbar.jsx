@@ -30,7 +30,7 @@ const socials = [
   {
     name: 'stackoverflow',
     img: stackoverflowImage,
-    url: "https://linkedin.com/in/moeinparvizi2002",
+    url: "https://stackoverflow.com/users/15075609/moein-parvizi",
   },
 ];
 
