@@ -67,7 +67,7 @@ const Hero = () => {
         moein parvizi web developer
       </motion.div>
       <figure className="image-container">
-        <img src={heroImage} alt="" />
+        <img src={heroImage} fetchpriority='high' alt="" />
       </figure>
     </div>
   );
