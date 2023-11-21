@@ -90,6 +90,8 @@
           top: 70%;
           padding: 40px;
           text-align: center;
+          transform: none !important;
+          transform: translateY(-70%) !important;
         }
         @include mobile {
           padding: 20px;
