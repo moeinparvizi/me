@@ -56,7 +56,7 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>i&apos;m web developer</motion.h2>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants} whileHover={{scale:1.2}} whileTap={{scale:0.8}}>
-              <a href="moeinparvizi.com/resume.pdf">
+              <a href="/resume.pdf" target="_blank">
                 see resume
               </a>
             </motion.button>
