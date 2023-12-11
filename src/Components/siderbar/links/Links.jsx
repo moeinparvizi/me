@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 export default function Links() {
-  const menu = ["homepage", "skills", "portfolio", "blog", "about"];
+  const menu = ["homepage", "skills", "portfolio", "about"];
 
   return (
     <motion.div className="links" variants={variants}>

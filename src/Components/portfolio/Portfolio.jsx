@@ -7,43 +7,43 @@ import { useRef } from "react";
 const posts = [
   {
     id: 1,
-    title: "reactj filan",
+    title: "dashboard",
     image:
-      "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
-    url:''
+      "/posts/dashboard.png",
+    desc: "A simple admin panel has been implemented using next JS14, and each part of the site's UI has been divided into a component for better code readability. If you like it, please give me a star. Thankful",
+    url:'https://github.com/moeinparvizi/dashboard'
   },
   {
     id: 2,
-    title: "next filan",
+    title: "persian alibaba",
     image:
-      "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
-    url:''
+      "/posts/alibaba.ir.png",
+    desc: "rebuild persion alibaba website with react js and tailwind and swiper and material ui and little formik if you like it give me star on the github page thanks for watching...",
+    url:'https://github.com/moeinparvizi/alibaba.ir'
   },
   {
     id: 3,
-    title: "filan",
+    title: "gaming website (board)",
     image:
-      "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
-    url:''
+      "/posts/gaming-website-board.png",
+    desc: "hi welcome to the my new project i hope you enjoy from my new project, this website about game and now i talk about this, build website with bootstrap and js swiperJS ransomUsers api and more, if you like it give me star in githubpage and follow in socials media.",
+    url:'https://github.com/moeinparvizi/gaming-website-board'
   },
   {
     id: 4,
-    title: "moein filan",
+    title: "music player",
     image:
-      "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
-    url:''
+      "/posts/music-player.png",
+    desc: "new project build with react & nextjs , have many components full Responsive & fetch data or music from api this application have animation build with framer motion. i hope you enjoy, plese give me star.",
+    url:'https://github.com/moeinparvizi/music-player'
   },
   {
     id: 5,
-    title: "parvizi",
+    title: "snake game",
     image:
-      "https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ratione eos in amet mollitia saepe dignissimos, possimus necessitatibus quia quis esse, ea aliquam debitis asperiores cum repellendus delectus molestiae.",
-    url:''
+      "/posts/snake-game.png",
+    desc: "a snake game build with javascript es6 to up , sass and more . snake movment build with grid display in css and when eating an apple it bigger than old self . when snake collition to wall or self body users game over in play board . i try to write clean code and to understand more write lot commnet in js . please give to my code star and follow my page in social media to happy me. scroll page to more information about this project.",
+    url:'https://github.com/moeinparvizi/snake-game'
   },
 ];
 
@@ -67,7 +67,7 @@ const Single = ({ post }) => {
             <h4>{post.title}</h4>
             <p>{post.desc}</p>
             <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}}>
-              <a href={post.url}>see demo</a>
+              <a href={post.url} target="_blank">more info & demo</a>
             </motion.button>
           </motion.div>
         </div>

@@ -1,12 +1,12 @@
 // images
-import githubImage from "../../../public/github.png";
-import instagramImage from "../../../public/instagram.png";
-import linkedinImage from "../../../public/linkedin.webp";
-import stackoverflowImage from "../../../public/stackoverflow.png";
+import githubImage from "../../../public/github.png"
+import instagramImage from "../../../public/instagram.png"
+import linkedinImage from "../../../public/linkedin.webp"
+import stackoverflowImage from "../../../public/stackoverflow.png"
 // library
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 // styles
-import "./about.scss";
+import "./about.scss"
 
 const socials = [
   {
@@ -29,7 +29,7 @@ const socials = [
     img: stackoverflowImage,
     url: "https://stackoverflow.com/users/15075609/moein-parvizi",
   },
-];
+]
 
 const About = () => {
   const variants = {
@@ -40,7 +40,7 @@ const About = () => {
     }),
 
     hidden: { opacity: 0, x: -100 },
-  };
+  }
   return (
     <div className="about">
       <div className="wrapper">
@@ -53,7 +53,11 @@ const About = () => {
             about{" "}
             <motion.div
               initial={{ x: -200, opacity: 0 }}
-              whileInView={{ transition: { delay: 4 }, x: 0, opacity: 1 }}
+              whileInView={{
+                transition: { delay: 4 },
+                x: 0,
+                opacity: 1,
+              }}
             >
               me
             </motion.div>
@@ -89,26 +93,34 @@ const About = () => {
                   whileTap={{ scale: 0.9 }}
                   target="_blank"
                 >
-                  <img src={item.img} alt={item.name + " " + "logo"} />
+                  <img
+                    src={item.img}
+                    alt={item.name + " " + "logo"}
+                  />
                 </motion.a>
-              );
+              )
             })}
           </motion.div>
         </motion.div>
         <div className="about-me-container">
           <motion.p
             initial={{ x: -200, opacity: 0 }}
-            whileInView={{ transition: { delay: 4 }, x: 0, opacity: 1 }}
+            whileInView={{
+              transition: { delay: 4 },
+              x: 0,
+              opacity: 1,
+            }}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
-            ab assumenda nulla quis facere praesentium omnis dolorem unde,
-            impedit aut in accusamus natus error reprehenderit vero veritatis,
-            voluptatibus blanditiis? Rem.
+            Hello, I am Moein Parvizi, born in Tehran in 2002, I
+            fell in love with programming since I was in high
+            school, and by entering the web world, I was able to
+            gain good experiences. I want to learn more in this
+            field and experience more.
           </motion.p>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

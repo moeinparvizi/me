@@ -56,9 +56,13 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>i&apos;m web developer</motion.h2>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants} whileHover={{scale:1.2}} whileTap={{scale:0.8}}>
-              see resume
+              <a href="moeinparvizi.com/resume.pdf">
+                see resume
+              </a>
             </motion.button>
-            <motion.button variants={textVariants} whileHover={{scale:1.2}} whileTap={{scale:0.8}}>contact me</motion.button>
+            <motion.button variants={textVariants} whileHover={{scale:1.2}} whileTap={{scale:0.8}}>
+              <a href="#about">contact me</a>
+            </motion.button>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src={scrollImage} alt="" />
         </motion.div>
@@ -67,7 +71,7 @@ const Hero = () => {
         moein parvizi web developer
       </motion.div>
       <figure className="image-container">
-        <img src={heroImage} fetchpriority='high' alt="" />
+        <img src={heroImage} fetchpriority='high' alt="me" />
       </figure>
     </div>
   );
